@@ -99,9 +99,47 @@ export default function Navbar() {
           }}
         />
       )}
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: open ? 'flex-start' : 'flex-end', marginLeft: open ? 0 : '2rem', gap: 2, fontSize: '1rem', paddingTop: open ? 16 : 0 }}>
-        <a href="tel:+447448023005" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.08rem', letterSpacing: '0.5px', transition: 'color 0.2s', padding: open ? '0.5rem 0' : 0 }}>+44 7448 023005</a>
-        <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontSize: '0.98rem', transition: 'color 0.2s', padding: open ? '0.5rem 0' : 0 }}>info@aimsecuregroup.uk</a>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: open ? 'flex-start' : 'flex-end',
+          marginLeft: open ? 0 : '2rem',
+          gap: 2,
+          fontSize: '1rem',
+          paddingTop: open ? 16 : 0,
+        }}
+      >
+        <a
+          href="tel:+447448023005"
+          style={{
+            color: 'var(--primary-blue)',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            fontSize: '1.08rem',
+            letterSpacing: '0.5px',
+            transition: 'color 0.2s',
+            padding: open ? '0.5rem 0' : 0,
+            display: 'inline-block',
+          }}
+          className="nav-contact-info"
+        >
+          +44 7448 023005
+        </a>
+        <a
+          href="mailto:info@aimsecuregroup.uk"
+          style={{
+            color: 'var(--primary-blue)',
+            textDecoration: 'none',
+            fontSize: '0.98rem',
+            transition: 'color 0.2s',
+            padding: open ? '0.5rem 0' : 0,
+            display: 'inline-block',
+          }}
+          className="nav-contact-info"
+        >
+          info@aimsecuregroup.uk
+        </a>
       </div>
       <style>{`
         @media (max-width: 900px) {
@@ -134,6 +172,9 @@ export default function Navbar() {
           }
           div[style*='flex-direction: column'] a {
             font-size: 0.95rem !important;
+          }
+          .nav-contact-info {
+            display: none !important;
           }
         }
       `}</style>

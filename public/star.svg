@@ -1,6 +1,6 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
   <defs>
-    <linearGradient id="starBody" x1="6" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+    <linearGradient id="starBody" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
       <stop stop-color="#2196F3"/>
       <stop offset="1" stop-color="#1A237E"/>
     </linearGradient>
@@ -8,13 +8,14 @@
       <stop offset="0%" stop-color="#fff" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
-    <filter id="starShadow" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1A237E" flood-opacity="0.13"/>
+    <filter id="starShadow" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1A237E" flood-opacity="0.18"/>
     </filter>
   </defs>
   <g filter="url(#starShadow)">
-    <polygon points="24,6 29,18 42,18 31,26 36,38 24,30 12,38 17,26 6,18 19,18" fill="url(#starBody)" stroke="#1A237E" stroke-width="2.5"/>
-    <polygon points="24,6 29,18 42,18 31,26 36,38 24,30 12,38 17,26 6,18 19,18" fill="url(#starHighlight)"/>
-    <circle cx="24" cy="24" r="18" fill="#fff" opacity=".08"/>
+    <polygon points="40,10 48,32 72,32 52,46 60,68 40,56 20,68 28,46 8,32 32,32" fill="url(#starBody)" stroke="#1A237E" stroke-width="3"/>
+    <polygon points="40,10 48,32 72,32 52,46 60,68 40,56 20,68 28,46 8,32 32,32" fill="url(#starHighlight)"/>
+    <circle cx="40" cy="40" r="28" fill="#fff" opacity="0.08"/>
   </g>
+  <title>Star Icon</title>
 </svg>

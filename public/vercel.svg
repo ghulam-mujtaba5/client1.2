@@ -1,0 +1,21 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="vercelBody" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2196F3"/>
+      <stop offset="1" stop-color="#1A237E"/>
+    </linearGradient>
+    <radialGradient id="vercelHighlight" cx="60%" cy="30%" r="60%" fx="60%" fy="30%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="vercelShadow" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1A237E" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#vercelShadow)">
+    <polygon points="40,12 68,68 12,68" fill="url(#vercelBody)" stroke="#1A237E" stroke-width="3"/>
+    <polygon points="40,12 68,68 12,68" fill="url(#vercelHighlight)"/>
+    <rect x="24" y="56" width="32" height="6" rx="2" fill="#fff" opacity="0.10"/>
+  </g>
+  <title>Triangle Icon</title>
+</svg>

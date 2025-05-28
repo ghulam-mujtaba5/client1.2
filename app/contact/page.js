@@ -10,7 +10,6 @@ export default function ContactPage() {
         <h1 style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--primary-blue)', marginBottom: 32, textAlign: 'center', letterSpacing: '-1px' }}>Contact Us</h1>
         <ContactSection />
       </section>
-      <Footer />
     </main>
   );
 }

@@ -40,10 +40,11 @@ export default function Footer() {
           <a href="/services" style={footerLink}>Services</a><br />
           <a href="/sectors" style={footerLink}>Sectors</a><br />
           <a href="/case-studies" style={footerLink}>Case Studies</a><br />
-          <a href="/news" style={footerLink}>News</a><br />
           <a href="/careers" style={footerLink}>Careers</a><br />
           <a href="#about" style={footerLink}>About</a><br />
-          <a href="#contact" style={footerLink}>Contact</a>
+          <a href="#contact" style={footerLink}>Contact</a><br />
+          <a href="/privacy-policy" style={footerLink}>Privacy Policy</a><br />
+          <a href="/terms" style={footerLink}>Terms & Conditions</a>
         </div>
         <div style={{ minWidth: 220 }}>
           <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>

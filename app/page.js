@@ -6,6 +6,7 @@ import FeaturedClients from "./components/FeaturedClients";
 import ServicesSection from "./components/ServicesSection";
 import AboutSection from "./components/AboutSection";
 import Testimonials from "./components/Testimonials";
+import CallToActionBanner from "./components/CallToActionBanner";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <ServicesSection />
       <AboutSection />
       <Testimonials />
+      <CallToActionBanner />
       <ContactSection />
       <Footer />
     </div>

@@ -28,12 +28,29 @@ export default function Navbar() {
       flexWrap: 'wrap',
       margin: 0,
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1 }}>
         <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', gap: 10 }} aria-label="Aim Secure Group Home">
           <Image src="/logo.svg" alt="Aim Secure Group Logo" width={38} height={38} style={{ filter: 'drop-shadow(0 2px 8px #2196f322)' }} />
           <span style={{ fontWeight: 900, fontSize: '1.7rem', letterSpacing: '-1px', color: 'var(--primary-blue)', fontFamily: 'var(--font-geist-sans)' }}>Aim Secure Group</span>
         </a>
       </div>
+      <button
+        aria-label="Open navigation menu"
+        onClick={() => setOpen((v) => !v)}
+        style={{
+          display: 'none',
+          background: 'none',
+          border: 'none',
+          color: 'var(--white)',
+          fontSize: 32,
+          marginLeft: 'auto',
+          cursor: 'pointer',
+          zIndex: 120,
+        }}
+        className="nav-mobile-btn"
+      >
+        {open ? <>&#10005;</> : <>&#9776;</>}
+      </button>
       <ul
         style={{
           display: open ? 'flex' : 'flex',
@@ -66,23 +83,6 @@ export default function Navbar() {
         <li><a href="/about" style={navLinkStyle}>About</a></li>
         <li><a href="/contact" style={navLinkStyle}>Contact</a></li>
       </ul>
-      <button
-        aria-label="Open navigation menu"
-        onClick={() => setOpen((v) => !v)}
-        style={{
-          display: 'none',
-          background: 'none',
-          border: 'none',
-          color: 'var(--white)',
-          fontSize: 32,
-          marginLeft: 16,
-          cursor: 'pointer',
-          zIndex: 120,
-        }}
-        className="nav-mobile-btn"
-      >
-        {open ? <>&#10005;</> : <>&#9776;</>}
-      </button>
       {/* Overlay for mobile menu */}
       {open && (
         <div

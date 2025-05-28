@@ -1,15 +1,17 @@
+
 import Navbar from '../components/Navbar';
 import AboutSection from '../components/AboutSection';
 import TrustBadges from '../components/TrustBadges';
 import FeaturedClients from '../components/FeaturedClients';
 import Testimonials from '../components/Testimonials';
 import containerStyles from '../container.module.css';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
     <main className={containerStyles.pageBg}>
       <Navbar />
-      <section className="fade-in" style={{
+      <header className="fade-in" style={{
         width: '100%',
         minHeight: '220px',
         background: 'linear-gradient(rgba(17,23,46,0.7),rgba(26,35,126,0.5)), url(/hero-bg.jpg) center/cover no-repeat',
@@ -29,9 +31,12 @@ export default function AboutPage() {
         <p className="fade-in-delay" style={{ fontSize: '1.15rem', maxWidth: 700, marginBottom: '1.5rem', zIndex: 3, lineHeight: 1.3 }}>
           Trusted security partner for leading brands, events, and organisations across the UK and Europe. Accredited, experienced, and dedicated to your safety.
         </p>
-      </section>
-      <section className={containerStyles.container + ' ' + containerStyles.section + ' fade-in-delay'}>
-        <h2 className="slide-up" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 18 }}>Our Story</h2>
+        <div style={{marginTop: 16}}>
+          <Image src="/logo.svg" alt="Aim Secure Group logo" width={64} height={64} style={{opacity: 0.85}} priority />
+        </div>
+      </header>
+      <section className={containerStyles.container + ' ' + containerStyles.section + ' fade-in-delay'} as="section" aria-labelledby="about-story">
+        <h2 id="about-story" className="slide-up" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 18 }}>Our Story</h2>
         <p style={{ fontSize: '1.1rem', lineHeight: 1.7, marginBottom: 24 }}>
           Founded in 2005, Aim Secure Group has grown from a local security provider to a trusted partner for major brands, events, and organisations across the UK and Europe. Our reputation is built on reliability, professionalism, and a relentless focus on client satisfaction. We combine decades of experience with the latest technology and a highly trained team to deliver security solutions you can trust.
         </p>

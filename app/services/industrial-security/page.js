@@ -61,14 +61,14 @@ export default function IndustrialSecurityPage() {
       >Industrial Security</h1>
       <span className="visually-hidden" id="industrial-desc">Industrial security guards and services for factories, warehouses, and production facilities. Static and patrolling guards, surveillance, and physical security upgrades.</span>
       <section className="fade-in-delay animate-on-scroll" aria-describedby="industrial-desc" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 32}}>
-        <img ref={imgRef} src="/file.svg" alt="Industrial Security" style={{height: 90, marginBottom: 18, opacity: 0.8, transition: 'transform 0.4s'}}
+        <img ref={imgRef} src="/file.svg" alt="Industrial Security" className="fade-in animate-on-scroll" style={{height: 90, marginBottom: 18, opacity: 0.8, transition: 'transform 0.4s'}}
           tabIndex={0}
           onMouseOver={e => e.currentTarget.style.transform = 'scale(1.12)'}
           onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
           onFocus={e => e.currentTarget.style.transform = 'scale(1.12)'}
           onBlur={e => e.currentTarget.style.transform = 'scale(1)'}
         />
-        <p style={{fontSize: '1.25rem', lineHeight: 1.7, marginBottom: 18, color: '#333', textAlign: 'center', maxWidth: 700, transition: 'color 0.2s'}}
+        <p className="fade-in animate-on-scroll" style={{fontSize: '1.25rem', lineHeight: 1.7, marginBottom: 18, color: '#333', textAlign: 'center', maxWidth: 700, transition: 'color 0.2s'}}
           tabIndex={0}
           onMouseOver={e => e.currentTarget.style.color = '#1976d2'}
           onMouseOut={e => e.currentTarget.style.color = '#333'}
@@ -86,7 +86,7 @@ export default function IndustrialSecurityPage() {
           onFocus={e => e.currentTarget.style.color = '#1976d2'}
           onBlur={e => e.currentTarget.style.color = 'var(--primary-blue)'}
         >What We Offer</h2>
-        <ul className="slide-up animate-on-scroll" style={{fontSize: '1.12rem', color: '#222', paddingLeft: 24, lineHeight: 1.8, fontWeight: 500, margin: 0, listStyle: 'disc inside', textAlign: 'left', maxWidth: 700, marginLeft: 'auto', marginRight: 'auto'}}>
+        <ul className="slide-up animate-on-scroll fade-in-delay" style={{fontSize: '1.12rem', color: '#222', paddingLeft: 24, lineHeight: 1.8, fontWeight: 500, margin: 0, listStyle: 'disc inside', textAlign: 'left', maxWidth: 700, marginLeft: 'auto', marginRight: 'auto'}}>
           <li tabIndex={0} style={{transition: 'color 0.2s'}} onMouseOver={e => e.currentTarget.style.color = '#1976d2'} onMouseOut={e => e.currentTarget.style.color = '#222'} onFocus={e => e.currentTarget.style.color = '#1976d2'} onBlur={e => e.currentTarget.style.color = '#222'}>Factory and warehouse guarding</li>
           <li tabIndex={0} style={{transition: 'color 0.2s'}} onMouseOver={e => e.currentTarget.style.color = '#1976d2'} onMouseOut={e => e.currentTarget.style.color = '#222'} onFocus={e => e.currentTarget.style.color = '#1976d2'} onBlur={e => e.currentTarget.style.color = '#222'}>Mobile patrols and alarm response</li>
           <li tabIndex={0} style={{transition: 'color 0.2s'}} onMouseOver={e => e.currentTarget.style.color = '#1976d2'} onMouseOut={e => e.currentTarget.style.color = '#222'} onFocus={e => e.currentTarget.style.color = '#1976d2'} onBlur={e => e.currentTarget.style.color = '#222'}>Access control and visitor management</li>
@@ -95,7 +95,7 @@ export default function IndustrialSecurityPage() {
         </ul>
       </section>
       <div style={{display: 'flex', justifyContent: 'center'}}>
-        <a ref={ctaRef} className="scale-in interactive-cta" href="/contact" style={{position: 'relative', overflow: 'hidden', background: 'linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%)', color: 'var(--white)', padding: '1rem 2.5rem', borderRadius: 8, fontWeight: 800, textDecoration: 'none', fontSize: '1.18rem', boxShadow: '0 2px 12px #2196f322', letterSpacing: '0.5px', transition: 'background 0.2s, box-shadow 0.2s'}}
+        <a ref={ctaRef} className="scale-in interactive-cta fade-in-delay" href="/contact" style={{position: 'relative', overflow: 'hidden', background: 'linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%)', color: 'var(--white)', padding: '1rem 2.5rem', borderRadius: 8, fontWeight: 800, textDecoration: 'none', fontSize: '1.18rem', boxShadow: '0 2px 12px #2196f322', letterSpacing: '0.5px', transition: 'background 0.2s, box-shadow 0.2s'}}
           aria-label="Request an industrial security quote"
           tabIndex={0}
           onMouseOver={e => {e.currentTarget.style.background = 'linear-gradient(90deg, #1976d2 60%, #64b5f6 100%)'; e.currentTarget.style.boxShadow = '0 6px 24px #1976d244';}}

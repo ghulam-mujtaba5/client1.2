@@ -47,27 +47,27 @@ const services = [
 export default function ServicesPage() {
 	return (
 		<main className={styles.container} aria-label="Services main content">
-			<HeroSection />
-			<section
-				style={{
-					maxWidth: 900,
-					margin: '0 auto',
-					padding: '2.5rem 0 1.5rem 0',
-					textAlign: 'center',
-				}}
-				aria-labelledby="services-main-heading"
-			>
-				<h1 id="services-main-heading" className={styles.heading} tabIndex={-1}>
-					Our Security Services
-				</h1>
-				<p
-					style={{
-						fontSize: '1.2rem',
-						color: 'var(--gray-dark)',
-						margin: '0 auto 2rem auto',
-						maxWidth: 700,
-					}}
-				>
+			<HeroSection />      <section
+        style={{
+          maxWidth: 900,
+          margin: '0 auto',
+          padding: 'clamp(1rem, 4vw, 2.5rem) clamp(1rem, 2vw, 0) clamp(0.75rem, 3vw, 1.5rem)',
+          textAlign: 'center',
+        }}
+        aria-labelledby="services-main-heading"
+      >
+        <h1 id="services-main-heading" className={styles.heading} tabIndex={-1}>
+          Our Security Services
+        </h1>
+        <p
+          style={{
+            fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
+            color: 'var(--gray-dark)',
+            margin: '0 auto clamp(1.25rem, 4vw, 2rem) auto',
+            maxWidth: '90%',
+            padding: '0 clamp(0.5rem, 2vw, 1rem)',
+          }}
+        >
 					Accredited, professional, and responsive security solutions for every sector. Our SIA-licensed team delivers peace of mind for businesses, events, and individuals across the UK and Europe. Explore our full range of services below.
 				</p>
 				<span className="visually-hidden" id="services-list-desc">

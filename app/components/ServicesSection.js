@@ -6,6 +6,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
+      className="fade-in"
       style={{
         width: "100%",
         background: "var(--accent-blue-light)",
@@ -23,7 +24,7 @@ export default function ServicesSection() {
         marginRight: 'auto',
       }}
     >
-      <h2
+      <h2 className="slide-up"
         style={{
           fontSize: "2.2rem",
           fontWeight: 800,

@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section style={{
+    <section className="fade-in" style={{
       width: '100%',
       background: 'linear-gradient(135deg, #EFF6FF, #F0F7FF)',
       padding: '3rem 0',
@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
       marginRight: 'auto',
       overflow: 'hidden'
     }}>
-      <h2 style={{
+      <h2 className="slide-up" style={{
         textAlign: 'center',
         color: '#1565C0',
         fontWeight: 800,
@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
         position: 'relative',
         textShadow: '0 2px 4px rgba(0,0,0,0.05)'
       }}>Why Choose Us?</h2>
-      <div style={{
+      <div className="fade-in-delay" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
         gap: 'clamp(1rem, 3vw, 2rem)',
@@ -55,8 +55,8 @@ export default function WhyChooseUs() {
         padding: '0 clamp(1rem, 3vw, 2rem)',
         position: 'relative'
       }}>
-        {features.map(({title, desc, icon}) => (
-          <div key={title} style={{
+        {features.map(({title, desc, icon}, idx) => (
+          <div key={title} className="scale-in" style={{
             background: '#FFFFFF',
             borderRadius: '12px',
             boxShadow: '0 4px 20px rgba(26,35,126,0.1)',

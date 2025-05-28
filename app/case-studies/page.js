@@ -34,7 +34,7 @@ export default function CaseStudiesPage() {
 	return (
 		<main className={containerStyles.pageBg}>
 			<Navbar />
-			<section style={{
+			<section className="fade-in" style={{
 				width: '100%',
 				minHeight: '220px',
 				background: 'linear-gradient(rgba(17,23,46,0.7),rgba(26,35,126,0.5)), url(/hero-bg.jpg) center/cover no-repeat',
@@ -48,17 +48,17 @@ export default function CaseStudiesPage() {
 				position: 'relative',
 				marginBottom: 0
 			}}>
-				<h1 style={{fontSize: '2.3rem', fontWeight: 800, marginBottom: '1.2rem', letterSpacing: '-1px', zIndex: 3, maxWidth: 700}}>
+				<h1 className="slide-up" style={{fontSize: '2.3rem', fontWeight: 800, marginBottom: '1.2rem', letterSpacing: '-1px', zIndex: 3, maxWidth: 700}}>
 					Case Studies
 				</h1>
-				<p style={{ fontSize: '1.15rem', maxWidth: 700, marginBottom: '1.5rem', zIndex: 3, lineHeight: 1.3 }}>
+				<p className="fade-in-delay" style={{ fontSize: '1.15rem', maxWidth: 700, marginBottom: '1.5rem', zIndex: 3, lineHeight: 1.3 }}>
 					Real-world results for leading brands, events, and organisations. Explore our proven track record in retail, logistics, events, and more.
 				</p>
 			</section>
 			<section className={containerStyles.container + ' ' + containerStyles.section}>
-				<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', width: '100%'}}>
+				<div className="fade-in-delay" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', width: '100%'}}>
 					{caseStudies.map(cs => (
-						<div key={cs.id} style={{background: 'var(--accent-blue-light)', borderRadius: 14, boxShadow: '0 2px 12px #1a237e11', padding: '2rem 1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', minHeight: 220}}>
+						<div key={cs.id} className="scale-in" style={{background: 'var(--accent-blue-light)', borderRadius: 14, boxShadow: '0 2px 12px #1a237e11', padding: '2rem 1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', minHeight: 220}}>
 							<img src={cs.logo} alt={cs.client + ' logo'} style={{height: 48, marginBottom: 18, opacity: 0.85}} />
 							<h2 style={{fontSize: '1.15rem', fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 10}}>{cs.title}</h2>
 							<p style={{fontSize: '1.05rem', color: '#444', marginBottom: 18}}>{cs.summary}</p>

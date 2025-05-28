@@ -1,12 +1,12 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import BingMapsReact from "bingmaps-react";
 
 // Cleaning Services service detail page
 export default function CleaningServicesPage() {
   const imgRef = useRef(null);
   const ctaRef = useRef(null);
-
   // Parallax effect for image
   useEffect(() => {
     const handleScroll = () => {

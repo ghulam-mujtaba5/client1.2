@@ -1,7 +1,7 @@
 // Contact section with form and details
 export default function ContactSection() {
   return (
-    <section id="contact" style={{
+    <section id="contact" className="contact-section" style={{
       width: '100%',
       background: 'var(--accent-blue-light)',
       color: 'var(--gray-dark)',
@@ -31,11 +31,15 @@ export default function ContactSection() {
           borderRadius: 12,
           boxShadow: '0 2px 8px rgba(26,35,126,0.07)',
           animation: 'fadeInUp 1.5s'
-        }}>
-          <input type="text" placeholder="Your Name" required style={inputStyle} />
-          <input type="email" placeholder="Your Email" required style={inputStyle} />
-          <input type="tel" placeholder="Phone" style={inputStyle} />
-          <textarea placeholder="How can we help?" rows={4} required style={inputStyle} />
+        }} aria-label="Contact form">
+          <label htmlFor="name" style={labelStyle}>Your Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required style={inputStyle} aria-required="true" />
+          <label htmlFor="email" style={labelStyle}>Your Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required style={inputStyle} aria-required="true" />
+          <label htmlFor="phone" style={labelStyle}>Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" style={inputStyle} />
+          <label htmlFor="message" style={labelStyle}>How can we help?</label>
+          <textarea id="message" name="message" placeholder="Type your message" rows={4} required style={inputStyle} aria-required="true" />
           <button type="submit" style={{
             background: 'linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%)',
             color: 'var(--white)',
@@ -48,22 +52,36 @@ export default function ContactSection() {
             marginTop: '0.5rem',
             boxShadow: '0 2px 8px #1a237e22',
             transition: 'all 0.2s'
-          }}>Send</button>
+          }} aria-label="Send message">Send</button>
         </form>
-        <div style={{ marginTop: '2rem', color: '#444', textAlign: 'left', fontSize: '1.08rem' }}>
+        <div style={{ marginTop: '2rem', color: 'var(--gray-dark)', textAlign: 'left', fontSize: '1.08rem' }}>
           <div style={{ marginBottom: 6 }}>Call us: <a href="tel:+447448023005" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 600 }}>+44 7448 023005</a></div>
           <div style={{ marginBottom: 6 }}>Email: <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 600 }}>info@aimsecuregroup.uk</a></div>
           <div style={{ marginTop: 8 }}>123 Main Street, London, UK</div>
         </div>
       </div>
       <div style={{ flex: 1, minWidth: 320, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>
-        <div style={{ width: '100%', height: 220, background: 'var(--white)', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#bbb', fontSize: 18, fontWeight: 600, boxShadow: '0 2px 8px #1a237e22' }}>
+        <div style={{ width: '100%', height: 220, background: 'var(--primary-blue)', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)', fontSize: 18, fontWeight: 600, boxShadow: '0 2px 8px #1a237e22', opacity: 0.85 }}>
           [Map Placeholder]
         </div>
         <div style={{ color: '#888', fontSize: '0.98rem', textAlign: 'center' }}>
           Our team responds within 24 hours. For urgent matters, please call directly.
         </div>
       </div>
+      <style>{`
+        @media (max-width: 700px) {
+          .contact-section {
+            flex-direction: column !important;
+            gap: 1.2rem !important;
+            padding: 2rem 0.5rem !important;
+          }
+          .contact-section > div {
+            min-width: 0 !important;
+            width: 100% !important;
+            text-align: center !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
@@ -73,5 +91,15 @@ const inputStyle = {
   borderRadius: 4,
   border: '1px solid var(--accent-blue)',
   fontSize: '1rem',
-  width: '100%'
+  width: '100%',
+  background: 'var(--accent-blue-light)',
+  color: 'var(--gray-dark)',
+  marginBottom: 2,
+};
+
+const labelStyle = {
+  fontWeight: 600,
+  color: 'var(--primary-blue)',
+  marginBottom: 2,
+  fontSize: '1rem',
 };

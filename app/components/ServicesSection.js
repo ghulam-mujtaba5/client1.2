@@ -8,8 +8,8 @@ export default function ServicesSection() {
       id="services"
       style={{
         width: "100%",
-        background: "#f8f9fa",
-        color: "#222",
+        background: "var(--accent-blue-light)",
+        color: "var(--gray-dark)",
         padding: "4rem 2rem",
         display: "flex",
         flexDirection: "column",
@@ -22,6 +22,7 @@ export default function ServicesSection() {
           fontSize: "2rem",
           fontWeight: "bold",
           marginBottom: "2rem",
+          color: "var(--primary-blue)",
         }}
       >
         Our Services
@@ -34,6 +35,7 @@ export default function ServicesSection() {
           width: "100%",
           maxWidth: 1000,
         }}
+        className="services-grid"
       >
         <ServiceCard
           title="Security Guards"
@@ -60,6 +62,15 @@ export default function ServicesSection() {
           desc="Protect high-value cargo from departure to destination."
         />
       </div>
+      <style>{`
+        @media (max-width: 700px) {
+          .services-grid {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 1.2rem !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

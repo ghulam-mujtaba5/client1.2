@@ -101,3 +101,38 @@ textarea:focus {
     color-scheme: dark;
   }
 }
+
+@media (max-width: 900px) {
+  section, .main, .page {
+    padding: 2.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  section, .main, .page {
+    padding: 1.5rem 0.5rem !important;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .main, .page {
+    padding: 0 !important;
+  }
+  section {
+    padding: 1.2rem 0.2rem !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  h1 {
+    font-size: 1.3rem !important;
+  }
+  h2 {
+    font-size: 1.1rem !important;
+  }
+}

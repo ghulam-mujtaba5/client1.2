@@ -1,7 +1,7 @@
 // About/company section
 export default function AboutSection() {
   return (
-    <section id="about" style={{
+    <section id="about" className="about-section" style={{
       width: '100%',
       background: 'var(--white)',
       color: 'var(--gray-dark)',
@@ -31,6 +31,23 @@ export default function AboutSection() {
       <div style={{ flex: 1, minWidth: 260, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <img src="/globe.svg" alt="Accreditation badge" style={{ width: 120, height: 120, opacity: 0.18, filter: 'drop-shadow(0 2px 8px #2196f322)' }} />
       </div>
+      <style>{`
+        @media (max-width: 700px) {
+          .about-section {
+            flex-direction: column !important;
+            gap: 1.2rem !important;
+            padding: 2rem 0.5rem !important;
+          }
+          .about-section > div {
+            min-width: 0 !important;
+            width: 100% !important;
+            text-align: center !important;
+          }
+          .about-section img {
+            margin: 0 auto !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

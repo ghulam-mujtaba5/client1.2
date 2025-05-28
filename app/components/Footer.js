@@ -7,8 +7,11 @@ export default function Footer() {
           <img src="/logo.svg" alt="Aim Secure Group logo" style={{height: 36, marginBottom: 8}} />
         </div>
         <div style={{marginBottom: 8}}>
-          &copy; {new Date().getFullYear()} Aim Secure Group Ltd. All rights reserved.<br />
-          Company No. 12345678 | SIA Approved Contractor | info@aimsecuregroup.uk | 0800 123 4567
+          &copy; {new Date().getFullYear()} AIM SECURE GROUP.UK LTD. All rights reserved.<br />
+          Registered in UNITED KINGDOM, Number 16083036 | SIA Approved Contractor<br />
+          <span>Phone: <a href="tel:+447448023005" style={{ color: 'var(--white)', textDecoration: 'underline' }}>+44 7448 023005</a></span> | 
+          <span>Email: <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--white)', textDecoration: 'underline' }}>info@aimsecuregroup.uk</a></span><br />
+          <span>Address: 128, City Road, London, EC1V 2NX, UNITED KINGDOM</span>
         </div>
         <nav aria-label="Legal links" style={{marginBottom: 8}}>
           <a href="/privacy-policy" style={{color: 'var(--white)', margin: '0 1rem', textDecoration: 'underline'}} rel="noopener">Privacy Policy</a>

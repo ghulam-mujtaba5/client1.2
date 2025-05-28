@@ -82,3 +82,15 @@ export default function SectorsPage() {
             <div key={sector.name} style={{background: 'var(--accent-blue-light)', borderRadius: 14, boxShadow: '0 2px 12px #1a237e11', padding: '2rem 1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', minHeight: 260}}>
               <img src={sector.icon} alt="" aria-hidden="true" style={{height: 48, marginBottom: 18, opacity: 0.85}} />
               <h2 style={{fontSize: '1.15rem', fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 10}}>{sector.name}</h2>
+              <p style={{fontSize: '1.05rem', color: '#444', marginBottom: 18}}>{sector.desc}</p>
+              <a href={sector.link} style={{background: 'var(--primary-blue)', color: 'var(--white)', padding: '0.7rem 1.5rem', borderRadius: 6, fontWeight: 600, textDecoration: 'none', fontSize: '1rem', boxShadow: '0 2px 8px #2196f322'}}>View Services</a>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section style={{margin: '2.5rem 0 0 0'}}>
+        <WhyChooseUs />
+      </section>
+    </main>
+  );
+}

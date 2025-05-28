@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import TrustBadges from "./components/TrustBadges";
 import ServicesSection from "./components/ServicesSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
@@ -10,6 +11,7 @@ export default function Home() {
     <div style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
       <Navbar />
       <HeroSection />
+      <TrustBadges />
       <ServicesSection />
       <AboutSection />
       <ContactSection />

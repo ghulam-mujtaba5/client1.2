@@ -55,7 +55,11 @@ export default function Navbar() {
         className={open ? 'nav-open' : ''}
       >
         <li><a href="/" style={navLinkStyle}>Home</a></li>
-        <li><a href="#services" style={navLinkStyle}>Services</a></li>
+        <li><a href="/services" style={navLinkStyle}>Services</a></li>
+        <li><a href="/sectors" style={navLinkStyle}>Sectors</a></li>
+        <li><a href="/case-studies" style={navLinkStyle}>Case Studies</a></li>
+        <li><a href="/news" style={navLinkStyle}>News</a></li>
+        <li><a href="/careers" style={navLinkStyle}>Careers</a></li>
         <li><a href="#about" style={navLinkStyle}>About</a></li>
         <li><a href="#contact" style={navLinkStyle}>Contact</a></li>
       </ul>

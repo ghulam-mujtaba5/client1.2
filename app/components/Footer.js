@@ -37,7 +37,11 @@ export default function Footer() {
         <div style={{ minWidth: 180 }}>
           <div style={{ fontWeight: 700, marginBottom: 8 }}>Quick Links</div>
           <a href="/" style={footerLink}>Home</a><br />
-          <a href="#services" style={footerLink}>Services</a><br />
+          <a href="/services" style={footerLink}>Services</a><br />
+          <a href="/sectors" style={footerLink}>Sectors</a><br />
+          <a href="/case-studies" style={footerLink}>Case Studies</a><br />
+          <a href="/news" style={footerLink}>News</a><br />
+          <a href="/careers" style={footerLink}>Careers</a><br />
           <a href="#about" style={footerLink}>About</a><br />
           <a href="#contact" style={footerLink}>Contact</a>
         </div>

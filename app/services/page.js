@@ -44,6 +44,36 @@ const services = [
 		link: '/services/transport-security',
 		desc: 'Protect high-value cargo from departure to destination.',
 	},
+	{
+		title: 'Cleaning Services',
+		icon: '/star.svg',
+		link: '/services/cleaning-services',
+		desc: 'Professional cleaning for residential and commercial spaces. Quality, value, and security in one service.',
+	},
+	{
+		title: 'Keyholding & Alarm Response',
+		icon: '/file.svg',
+		link: '/services/keyholding-alarm-response',
+		desc: '24/7 secure keyholding and rapid alarm response for your premises.',
+	},
+	{
+		title: 'Guard Dog Security',
+		icon: '/shield.svg',
+		link: '/services/guard-dog-security',
+		desc: 'Highly trained security dogs and handlers for maximum deterrence and rapid response.',
+	},
+	{
+		title: 'Hotel Security',
+		icon: '/star.svg',
+		link: '/services/hotel-security',
+		desc: 'Discreet, multi-skilled security and concierge staff for hotels and hospitality venues.',
+	},
+	{
+		title: 'Vacant Premises Security',
+		icon: '/window.svg',
+		link: '/services/vacant-premises-security',
+		desc: 'Protection for empty properties against trespass, vandalism, and theft.',
+	},
 ];
 
 export default function ServicesPage() {

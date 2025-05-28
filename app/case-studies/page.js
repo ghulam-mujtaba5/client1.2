@@ -1,3 +1,4 @@
+import Navbar from '../components/Navbar';
 // Case Studies page
 
 const caseStudies = [
@@ -30,6 +31,7 @@ const caseStudies = [
 export default function CaseStudiesPage() {
   return (
     <main style={{padding: 0, maxWidth: 1100, margin: '0 auto'}}>
+      <Navbar />
       <section style={{
         width: '100%',
         minHeight: '220px',

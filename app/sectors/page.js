@@ -1,3 +1,4 @@
+import Navbar from '../components/Navbar';
 import WhyChooseUs from '../components/WhyChooseUs';
 
 const sectors = [
@@ -55,6 +56,7 @@ const sectors = [
 export default function SectorsPage() {
   return (
     <main style={{padding: 0, maxWidth: 1100, margin: '0 auto'}}>
+      <Navbar />
       <section style={{
         width: '100%',
         minHeight: '260px',

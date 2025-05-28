@@ -1,3 +1,4 @@
+import Navbar from '../components/Navbar';
 import WhyChooseUs from '../components/WhyChooseUs';
 
 const jobs = [
@@ -31,6 +32,7 @@ const jobs = [
 export default function CareersPage() {
   return (
     <main style={{padding: 0, maxWidth: 1100, margin: '0 auto'}}>
+      <Navbar />
       <section style={{
         width: '100%',
         minHeight: '220px',

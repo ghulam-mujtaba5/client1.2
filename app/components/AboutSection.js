@@ -25,7 +25,6 @@ export default function AboutSection() {
         </p>
         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginTop: 16 }}>
           <span style={{ background: 'var(--primary-blue)', color: 'var(--white)', borderRadius: 8, padding: '0.5rem 1.2rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.5px', boxShadow: '0 2px 8px #1a237e22' }}>SIA Approved</span>
-          <span style={{ background: 'var(--accent-blue)', color: 'var(--white)', borderRadius: 8, padding: '0.5rem 1.2rem', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.5px', boxShadow: '0 2px 8px #2196f322' }}>ISO Certified</span>
         </div>
       </div>
       <div style={{ flex: 1, minWidth: 260, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

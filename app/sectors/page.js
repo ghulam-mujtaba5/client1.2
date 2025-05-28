@@ -55,7 +55,7 @@ const sectors = [
 // Sectors/Industries served page
 export default function SectorsPage() {
   return (
-    <main style={{padding: 0, maxWidth: 1100, margin: '0 auto'}}>
+    <main style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
       <Navbar />
       <section style={{
         width: '100%',

@@ -47,7 +47,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-	<main className={styles.container} aria-label="Services main content">
+	<main style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }} aria-label="Services main content">
 	  <Navbar />
 	  <HeroSection />
 	  <section

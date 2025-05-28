@@ -7,7 +7,7 @@ import Testimonials from '../components/Testimonials';
 
 export default function AboutPage() {
   return (
-    <main style={{ padding: 0, maxWidth: 1100, margin: '0 auto' }}>
+    <main style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
       <section style={{
         width: '100%',
         minHeight: '220px',

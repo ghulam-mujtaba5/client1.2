@@ -7,10 +7,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <nav style={{
-      width: '100%',
+      width: '100vw',
+      maxWidth: '100%',
+      left: 0,
+      right: 0,
       background: 'rgba(17,23,46,0.98)', // deep blue-black
       color: 'var(--white)',
-      padding: '1.2rem 3vw',
+      padding: '1.2rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -23,6 +26,7 @@ export default function Navbar() {
       borderBottomRightRadius: 12,
       transition: 'background 0.3s',
       flexWrap: 'wrap',
+      margin: 0,
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
         <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', gap: 10 }} aria-label="Aim Secure Group Home">

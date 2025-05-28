@@ -15,14 +15,22 @@ export default function ServicesSection() {
         flexDirection: "column",
         alignItems: "center",
         fontFamily: "var(--font-geist-sans)",
+        borderRadius: 18,
+        boxShadow: '0 4px 24px rgba(26,35,126,0.07)',
+        margin: '2rem 0',
+        maxWidth: 1200,
+        marginLeft: 'auto',
+        marginRight: 'auto',
       }}
     >
       <h2
         style={{
-          fontSize: "2rem",
-          fontWeight: "bold",
+          fontSize: "2.2rem",
+          fontWeight: 800,
           marginBottom: "2rem",
           color: "var(--primary-blue)",
+          textAlign: 'center',
+          letterSpacing: '-1px',
         }}
       >
         Our Services
@@ -30,8 +38,8 @@ export default function ServicesSection() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "2rem",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+          gap: "2.2rem",
           width: "100%",
           maxWidth: 1000,
         }}

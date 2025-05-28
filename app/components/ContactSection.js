@@ -16,10 +16,12 @@ export default function ContactSection() {
       margin: '0 auto',
       borderRadius: 16,
       boxShadow: '0 4px 24px rgba(26,35,126,0.07)',
-      animation: 'fadeInUp 1.2s'
+      animation: 'fadeInUp 1.2s',
+      marginTop: '2rem',
+      marginBottom: '2rem'
     }}>
       <div style={{ flex: 1, minWidth: 320 }}>
-        <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1.5rem', color: 'var(--primary-blue)' }}>Get in Touch</h2>
+        <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1.5rem', color: 'var(--primary-blue)', textAlign: 'center', letterSpacing: '-1px' }}>Get in Touch</h2>
         <form style={{
           display: 'flex',
           flexDirection: 'column',

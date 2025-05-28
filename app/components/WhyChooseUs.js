@@ -29,6 +29,12 @@ export default function WhyChooseUs() {
       background: 'linear-gradient(135deg, #EFF6FF, #F0F7FF)',
       padding: '3rem 0',
       position: 'relative',
+      borderRadius: 18,
+      boxShadow: '0 4px 24px rgba(26,35,126,0.07)',
+      margin: '2rem 0',
+      maxWidth: 1200,
+      marginLeft: 'auto',
+      marginRight: 'auto',
       overflow: 'hidden'
     }}>
       <h2 style={{
@@ -40,7 +46,6 @@ export default function WhyChooseUs() {
         position: 'relative',
         textShadow: '0 2px 4px rgba(0,0,0,0.05)'
       }}>Why Choose Us?</h2>
-
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',

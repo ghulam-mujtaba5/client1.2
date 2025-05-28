@@ -1,12 +1,13 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
-import BingMapsReact from "bingmaps-react";
 
 // Cleaning Services service detail page
 export default function CleaningServicesPage() {
   const imgRef = useRef(null);
   const ctaRef = useRef(null);
+  const mapCenter = { latitude: 51.5275, longitude: -0.0915 }; // Coordinates for 128 City Road, London
+
   // Parallax effect for image
   useEffect(() => {
     const handleScroll = () => {
@@ -113,44 +114,26 @@ export default function CleaningServicesPage() {
           London, EC1V 2NX, UNITED KINGDOM<br />
           <span style={{fontWeight: 500, color: '#1976d2'}}>Registered in UNITED KINGDOM, Number 16083036</span><br />
           <span style={{display: 'block', marginTop: 10}}>
-            <span style={{fontWeight: 700}}>Phone:</span> <a href="tel:+447448023005" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}>+44 7448 023005</a>
+            <span style={{fontWeight: 700}}>Phone:</span> <a href="tel:+447448023005" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}}>+44 7448 023005</a>
           </span>
           <span>
-            <span style={{fontWeight: 700}}>Email:</span> <a href="mailto:info@aimsecuregroup.uk" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}>info@aimsecuregroup.uk</a>
+            <span style={{fontWeight: 700}}>Email:</span> <a href="mailto:info@aimsecuregroup.uk" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}}>info@aimsecuregroup.uk</a>
           </span>
         </address>
         <div style={{width: '100%', maxWidth: 500, height: 260, borderRadius: 14, overflow: 'hidden', boxShadow: '0 2px 16px #1a237e11', background: 'linear-gradient(135deg, #e3f2fd 60%, #bbdefb 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8, position: 'relative'}}>
-          <iframe
-            title="Company Location Map"
-            src="https://maps.google.com/maps?q=128%20City%20Road%2C%20London%2C%20EC1V%202NX%2C%20UK&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            style={{border: 0, width: '100%', height: '100%', filter: 'contrast(1.1) brightness(1.05)', borderRadius: 14, transition: 'box-shadow 0.3s'}}
+          <iframe 
+            src="https://maps.google.com/maps?width=100%25&height=260&hl=en&q=128%20City%20Road,%20London,%20EC1V%202NX,%20UK+(AIM%20SECURE%20GROUP)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+            width="100%"
+            height="100%"
+            style={{border: 0, borderRadius: 14}}
             allowFullScreen
             loading="lazy"
-            tabIndex={0}
-            aria-label="Map showing company location"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="AIM SECURE GROUP.UK LTD Location"
+            aria-label="Map showing our location at 128 City Road, London"
           ></iframe>
         </div>
       </section>
-      <style>{`
-        .ripple {
-          position: absolute;
-          border-radius: 50%;
-          background: rgba(255,255,255,0.4);
-          transform: scale(0);
-          animation: ripple 0.6s linear;
-          pointer-events: none;
-          z-index: 2;
-        }
-        @keyframes ripple {
-          to {
-            transform: scale(2.5);
-            opacity: 0;
-          }
-        }
-        .animate-on-scroll { opacity: 0; transition: opacity 0.7s, transform 0.7s; transform: translateY(40px); }
-        .animate-on-scroll.in-view { opacity: 1 !important; transform: none !important; }
-        .interactive-cta:active { filter: brightness(0.95); }
-      `}</style>
     </main>
   );
 }

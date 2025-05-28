@@ -104,36 +104,7 @@ export default function CleaningServicesPage() {
           onFocus={e => {e.currentTarget.style.background = 'linear-gradient(90deg, #1976d2 60%, #64b5f6 100%)'; e.currentTarget.style.boxShadow = '0 6px 24px #1976d244';}}
           onBlur={e => {e.currentTarget.style.background = 'linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%)'; e.currentTarget.style.boxShadow = '0 2px 12px #2196f322';}}
         >Request a Quote</a>
-      </div>
-      {/* Contact & Map Section */}
-      <section className="fade-in animate-on-scroll" aria-label="Our Address and Map" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 32}}>
-        <h3 className="slide-up animate-on-scroll" style={{fontSize: '1.15rem', color: 'var(--primary-blue)', fontWeight: 700, marginBottom: 10, textAlign: 'center', letterSpacing: '-0.5px'}}>Our Address & Contact</h3>
-        <address style={{fontStyle: 'normal', color: '#333', fontSize: '1.08rem', marginBottom: 16, textAlign: 'center', lineHeight: 1.7}}>
-          <div style={{fontWeight: 700, color: '#1976d2', fontSize: '1.12rem'}}>AIM SECURE GROUP.UK LTD</div>
-          128, City Road,<br />
-          London, EC1V 2NX, UNITED KINGDOM<br />
-          <span style={{fontWeight: 500, color: '#1976d2'}}>Registered in UNITED KINGDOM, Number 16083036</span><br />
-          <span style={{display: 'block', marginTop: 10}}>
-            <span style={{fontWeight: 700}}>Phone:</span> <a href="tel:+447448023005" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}}>+44 7448 023005</a>
-          </span>
-          <span>
-            <span style={{fontWeight: 700}}>Email:</span> <a href="mailto:info@aimsecuregroup.uk" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}}>info@aimsecuregroup.uk</a>
-          </span>
-        </address>
-        <div style={{width: '100%', maxWidth: 500, height: 260, borderRadius: 14, overflow: 'hidden', boxShadow: '0 2px 16px #1a237e11', background: 'linear-gradient(135deg, #e3f2fd 60%, #bbdefb 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8, position: 'relative'}}>
-          <iframe 
-            src="https://maps.google.com/maps?width=100%25&height=260&hl=en&q=128%20City%20Road,%20London,%20EC1V%202NX,%20UK+(AIM%20SECURE%20GROUP)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
-            width="100%"
-            height="100%"
-            style={{border: 0, borderRadius: 14}}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="AIM SECURE GROUP.UK LTD Location"
-            aria-label="Map showing our location at 128 City Road, London"
-          ></iframe>
-        </div>
-      </section>
+      </div>      
     </main>
   );
 }

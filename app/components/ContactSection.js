@@ -63,8 +63,16 @@ export default function ContactSection() {
         </div>
       </div>
       <div style={{ flex: 1, minWidth: 320, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>
-        <div style={{ width: '100%', height: 220, background: 'var(--primary-blue)', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)', fontSize: 18, fontWeight: 600, boxShadow: '0 2px 8px #1a237e22', opacity: 0.85 }}>
-          [Map Placeholder]
+        <div style={{ width: '100%', height: 260, borderRadius: 12, overflow: 'hidden', boxShadow: '0 2px 8px #1a237e22' }}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4340750279684!2d-0.09368688459796905!3d51.52750837963776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca650dc9061%3A0x5afb7c42e89dd82f!2s128%20City%20Rd%2C%20London%20EC1V%202NX%2C%20UK!5e0!3m2!1sen!2sus!4v1699890733321!5i2"
+            style={{ border: 0, width: '100%', height: '100%' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="AIM SECURE GROUP.UK LTD Location"
+            aria-label="Map showing our location at 128 City Road, London"
+          />
         </div>
         <div style={{ color: '#888', fontSize: '0.98rem', textAlign: 'center' }}>
           Our team responds within 24 hours. For urgent matters, please call directly.

@@ -1,3 +1,4 @@
+import containerStyles from '../container.module.css';
 import Navbar from '../components/Navbar';
 import WhyChooseUs from '../components/WhyChooseUs';
 
@@ -55,7 +56,7 @@ const sectors = [
 // Sectors/Industries served page
 export default function SectorsPage() {
   return (
-    <main style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
+    <main className={containerStyles.pageBg}>
       <Navbar />
       <section style={{
         width: '100%',
@@ -78,8 +79,8 @@ export default function SectorsPage() {
           Specialist security for every sector. Our SIA-licensed team protects people, property, and assets across retail, corporate, construction, events, logistics, hospitality, education, and more.
         </p>
       </section>
-      <section style={{padding: '2.5rem 1rem 1.5rem 1rem', background: 'var(--white)'}}>
-        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem', width: '100%', maxWidth: 1100, margin: '0 auto'}}>
+      <section className={containerStyles.container + ' ' + containerStyles.section}>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem', width: '100%'}}>
           {sectors.map(sector => (
             <div key={sector.name} style={{background: 'var(--accent-blue-light)', borderRadius: 14, boxShadow: '0 2px 12px #1a237e11', padding: '2rem 1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', minHeight: 260}}>
               <img src={sector.icon} alt="" aria-hidden="true" style={{height: 48, marginBottom: 18, opacity: 0.85}} />

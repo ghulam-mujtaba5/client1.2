@@ -1,3 +1,4 @@
+import containerStyles from '../container.module.css';
 import Navbar from '../components/Navbar';
 import WhyChooseUs from '../components/WhyChooseUs';
 
@@ -31,7 +32,7 @@ const jobs = [
 // Careers/Jobs page
 export default function CareersPage() {
   return (
-    <main style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
+    <main className={containerStyles.pageBg}>
       <Navbar />
       <section style={{
         width: '100%',
@@ -54,9 +55,9 @@ export default function CareersPage() {
           Join a leading UK security company. We offer rewarding roles, industry-leading training, and real career progression. Your future in security starts here.
         </p>
       </section>
-      <section style={{padding: '2.5rem 1rem 1.5rem 1rem', background: 'var(--white)'}}>
+      <section className={containerStyles.container + ' ' + containerStyles.section}>
         <h2 style={{fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 18}}>Current Vacancies</h2>
-        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', width: '100%', maxWidth: 1100, margin: '0 auto', marginBottom: 32}}>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', width: '100%', marginBottom: 32}}>
           {jobs.map(job => (
             <div key={job.title} style={{background: 'var(--accent-blue-light)', borderRadius: 14, boxShadow: '0 2px 12px #1a237e11', padding: '2rem 1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', minHeight: 180}}>
               <h3 style={{fontSize: '1.15rem', fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 6}}>{job.title}</h3>

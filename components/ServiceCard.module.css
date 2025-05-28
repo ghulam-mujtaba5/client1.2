@@ -1,85 +1,124 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  justify-content: space-between;
   background: var(--white);
   border-radius: clamp(8px, 2vw, 14px);
-  box-shadow: 0 4px 24px rgba(26,35,126,0.10);
-  padding: clamp(0.8rem, 3vw, 2rem) clamp(0.5rem, 2vw, 1rem);
+  box-shadow: 0 4px 24px rgba(26,35,126,0.12);
+  padding: clamp(1.2rem, 3vw, 2.2rem) clamp(1rem, 2vw, 1.5rem);
   text-align: center;
-  min-height: clamp(150px, 30vh, 210px);
+  min-height: 320px;
   text-decoration: none;
   color: var(--gray-dark);
-  border: 1.5px solid var(--accent-blue-light);
+  border: 2px solid var(--accent-blue-light);
   margin-bottom: clamp(4px, 1vw, 8px);
   cursor: pointer;
   width: 100%;
   max-width: 340px;
   margin-left: auto;
   margin-right: auto;
-  transition: all 0.2s ease-in-out;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  position: relative;
+  isolation: isolate;
 }
-.card:focus, .card:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 8px 32px rgba(26,35,126,0.16);
+.card:focus {
+  outline: 3px solid var(--primary-blue);
+  outline-offset: 2px;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(26,35,126,0.18);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(26,35,126,0.18);
   border-color: var(--primary-blue);
 }
 .icon {
-  height: clamp(32px, 5vw, 48px);
-  width: clamp(32px, 5vw, 48px);
-  margin-bottom: clamp(10px, 2vw, 18px);
-  filter: drop-shadow(0 2px 8px #2196f322);
-  transition: transform 0.2s ease;
+  height: clamp(40px, 5vw, 56px);
+  width: clamp(40px, 5vw, 56px);
+  margin-bottom: clamp(14px, 2vw, 22px);
+  filter: drop-shadow(0 2px 8px rgba(33, 150, 243, 0.25));
+  transition: transform 0.2s;
 }
 .card:hover .icon {
-  transform: scale(1.1);
+  transform: scale(1.12);
 }
 .title {
-  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
   font-weight: 700;
-  margin-bottom: clamp(6px, 1.5vw, 10px);
+  margin-bottom: clamp(10px, 1.5vw, 16px);
   color: var(--primary-blue);
+  letter-spacing: -0.01em;
 }
 .desc {
-  font-size: clamp(0.9rem, 2vw, 1.05rem);
-  color: #444;
-  line-height: 1.6;
+  font-size: clamp(1rem, 2vw, 1.08rem);
+  color: #2c3e50;
+  line-height: 1.7;
   max-width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 0.5rem auto;
+  flex: 1 1 auto;
 }
 .learnMore {
   display: inline-block;
-  margin-top: clamp(0.8rem, 2vw, 1.2rem);
-  padding: clamp(0.4rem, 1vw, 0.5rem) clamp(0.8rem, 2vw, 1.2rem);
-  background: linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%);
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(0.5rem, 1vw, 0.7rem) clamp(1rem, 2vw, 1.5rem);
+  background: linear-gradient(90deg, #1976D2 0%, #2196F3 100%);
   color: var(--white);
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  box-shadow: 0 2px 8px #2196f322;
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.08rem);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
   min-width: clamp(90px, 20vw, 120px);
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
-.card:focus .learnMore, .card:hover .learnMore {
-  background: linear-gradient(90deg, var(--accent-blue) 60%, var(--primary-blue) 100%);
-  transform: scale(1.05);
+.card:hover .learnMore {
+  background: linear-gradient(90deg, #2196F3 0%, #1976D2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(33, 150, 243, 0.25);
 }
-@media (prefers-reduced-motion: reduce) {
-  .card,
-  .icon,
-  .learnMore {
-    transition: none;
+
+/* High contrast mode */
+@media (forced-colors: active) {
+  .card {
+    border: 2px solid ButtonText;
   }
   
+  .card:focus,
   .card:hover {
-    transform: none;
+    outline: 2px solid Highlight;
   }
   
-  .card:hover .icon {
-    transform: none;
+  .learnMore {
+    border: 1px solid ButtonText;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #1a1f2d;
+    border-color: rgba(255,255,255,0.1);
+  }
+  
+  .desc {
+    color: rgba(255,255,255,0.9);
+  }
+  
+  .title {
+    color: #64B5F6;
+  }
+  
+  .learnMore {
+    background: linear-gradient(90deg, #2196F3 0%, #64B5F6 100%);
+    color: #000;
   }
   
   .card:hover .learnMore {
-    transform: none;
+    background: linear-gradient(90deg, #64B5F6 0%, #2196F3 100%);
   }
 }

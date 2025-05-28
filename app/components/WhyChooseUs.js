@@ -1,25 +1,92 @@
 // Why Choose Us / Company values section
 export default function WhyChooseUs() {
+  const features = [
+    {
+      title: 'SIA Licensed Guards',
+      desc: 'All our security personnel are fully licensed and trained to SIA standards, ensuring professional and compliant service.',
+      icon: '/shield.svg'
+    },
+    {
+      title: '24/7 Coverage',
+      desc: 'Round-the-clock security solutions with rapid response capabilities for complete peace of mind.',
+      icon: '/globe.svg'
+    },
+    {
+      title: 'Industry Experience',
+      desc: 'Over 15 years of experience providing security solutions across various sectors and environments.',
+      icon: '/star.svg'
+    },
+    {
+      title: 'Tailored Solutions',
+      desc: 'Customized security strategies designed to meet your specific requirements and challenges.',
+      icon: '/file.svg'
+    }
+  ];
+
   return (
-    <section style={{width: '100%', background: 'var(--accent-blue-light)', padding: '3rem 0', borderTop: '1px solid #eee'}}>
-      <h2 style={{textAlign: 'center', color: 'var(--primary-blue)', fontWeight: 800, fontSize: '2rem', marginBottom: 32}}>Why Choose Us?</h2>
-      <div style={{display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center'}}>
-        <ValueCard title="Price Promise" desc="We deliver premium security at the best value. We'll beat any genuine competitor quote." icon="/star.svg" />
-        <ValueCard title="Fair Dealing" desc="Clear pricing, simple contracts, and no hidden charges. We value transparency." icon="/check.svg" />
-        <ValueCard title="Targeted Security" desc="Services tailored to your needs, with ongoing assessment and planning." icon="/shield.svg" />
-        <ValueCard title="Expertise" desc="Decades of experience across the UK and Europe. Accredited and trusted." icon="/building.svg" />
-        <ValueCard title="Dedication" desc="24/7 support and a team that cares about your safety and satisfaction." icon="/star.svg" />
+    <section style={{
+      width: '100%',
+      background: 'linear-gradient(135deg, #EFF6FF, #F0F7FF)',
+      padding: '3rem 0',
+      position: 'relative',
+      overflow: 'hidden'
+    }}>
+      <h2 style={{
+        textAlign: 'center',
+        color: '#1565C0',
+        fontWeight: 800,
+        fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+        marginBottom: '2rem',
+        position: 'relative',
+        textShadow: '0 2px 4px rgba(0,0,0,0.05)'
+      }}>Why Choose Us?</h2>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: 'clamp(1rem, 3vw, 2rem)',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '0 clamp(1rem, 3vw, 2rem)',
+        position: 'relative'
+      }}>
+        {features.map(({title, desc, icon}) => (
+          <div key={title} style={{
+            background: '#FFFFFF',
+            borderRadius: '12px',
+            boxShadow: '0 4px 20px rgba(26,35,126,0.1)',
+            padding: 'clamp(1.5rem, 3vw, 2rem)',
+            fontSize: '1.05rem',
+            color: '#2C3E50',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '12px',
+            transition: 'transform 0.2s, box-shadow 0.2s',
+            border: '1px solid rgba(33,150,243,0.1)',
+            position: 'relative'
+          }}>
+            <img src={icon} alt="" style={{
+              width: 'clamp(40px, 5vw, 48px)',
+              height: 'clamp(40px, 5vw, 48px)',
+              filter: 'drop-shadow(0 2px 4px rgba(33,150,243,0.2))',
+              marginBottom: '4px'
+            }} />
+            <div style={{
+              fontWeight: 700,
+              color: '#1565C0',
+              marginBottom: '8px',
+              fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)'
+            }}>{title}</div>
+            <p style={{
+              margin: 0,
+              lineHeight: 1.6,
+              color: '#2C3E50',
+              fontSize: 'clamp(0.95rem, 2vw, 1.05rem)'
+            }}>{desc}</p>
+          </div>
+        ))}
       </div>
     </section>
-  );
-}
-
-function ValueCard({ title, desc, icon }) {
-  return (
-    <div style={{background: 'var(--white)', borderRadius: 12, boxShadow: '0 2px 12px #1a237e11', padding: '2rem', maxWidth: 300, minWidth: 200, fontSize: '1.05rem', color: 'var(--gray-dark)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12}}>
-      {icon && <img src={icon} alt="" aria-hidden="true" style={{height: 36, marginBottom: 8}} />}
-      <div style={{fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 8}}>{title}</div>
-      <div>{desc}</div>
-    </div>
   );
 }

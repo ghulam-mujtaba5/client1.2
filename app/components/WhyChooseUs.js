@@ -64,9 +64,10 @@ export default function WhyChooseUs() {
             gap: '12px',
             transition: 'transform 0.2s, box-shadow 0.2s',
             border: '1px solid rgba(33,150,243,0.1)',
-            position: 'relative'
-          }}>
-            <img src={icon} alt="" style={{
+            position: 'relative',
+            outline: 'none'
+          }} tabIndex={0}>
+            <img src={icon} alt={title + ' icon'} style={{
               width: 'clamp(40px, 5vw, 48px)',
               height: 'clamp(40px, 5vw, 48px)',
               filter: 'drop-shadow(0 2px 4px rgba(33,150,243,0.2))',

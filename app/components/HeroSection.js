@@ -30,10 +30,10 @@ export default function HeroSection() {
         background: 'radial-gradient(circle at 60% 40%, var(--accent-blue) 0%, transparent 70%)'
       }} />
       <svg width="120" height="120" viewBox="0 0 120 120" fill="none" style={{ position: 'absolute', right: 40, top: 40, opacity: 0.12, zIndex: 2, maxWidth: '20vw', minWidth: 60 }} aria-hidden="true"><circle cx="60" cy="60" r="58" stroke="var(--white)" strokeWidth="4" /><rect x="35" y="35" width="50" height="50" rx="12" fill="var(--primary-blue)" opacity="0.2" /></svg>
-      <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.2rem', letterSpacing: '-1px', zIndex: 3, animation: 'fadeInUp 1.2s', maxWidth: 600 }}>
+      <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.2rem', letterSpacing: '-1px', zIndex: 3, animation: 'fadeInUp 1.2s', maxWidth: 600, outline: 'none' }} tabIndex={0}>
         Security & Protection You Can Trust
       </h1>
-      <p style={{ fontSize: '1.35rem', maxWidth: 700, marginBottom: '2.5rem', zIndex: 3, animation: 'fadeInUp 1.5s', lineHeight: 1.3 }}>
+      <p style={{ fontSize: '1.35rem', maxWidth: 700, marginBottom: '2.5rem', zIndex: 3, animation: 'fadeInUp 1.5s', lineHeight: 1.3 }} tabIndex={0}>
         Accredited, experienced, and responsive security solutions for businesses, events, and individuals across the UK & Europe. Your safety is our mission.
       </p>
       <a href="#contact" style={{
@@ -56,7 +56,7 @@ export default function HeroSection() {
       </a>
       <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', zIndex: 2 }}>
         {/* Decorative image, aria-hidden for accessibility */}
-        <Image src="/vercel.svg" alt="" width={120} height={40} style={{ opacity: 0.18, margin: '0 auto', maxWidth: '30vw', minWidth: 40 }} aria-hidden="true" />
+        <Image src="/vercel.svg" alt="Vercel logo" width={120} height={40} style={{ opacity: 0.18, margin: '0 auto', maxWidth: '30vw', minWidth: 40 }} aria-hidden="true" />
       </div>
       <style>{`
         @media (max-width: 900px) {

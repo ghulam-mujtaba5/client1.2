@@ -40,26 +40,32 @@ export default function ServicesSection() {
         <ServiceCard
           title="Security Guards"
           desc="Highly trained, vetted professionals for all sectors and occasions."
+          tabIndex={0}
         />
         <ServiceCard
           title="Corporate Security"
           desc="Concierge, static, and mobile security for your business premises."
+          tabIndex={0}
         />
         <ServiceCard
           title="Event Security"
           desc="Planning, crowd management, and on-site protection for safe events."
+          tabIndex={0}
         />
         <ServiceCard
           title="Retail Security"
           desc="Reduce losses and protect assets with expert retail security solutions."
+          tabIndex={0}
         />
         <ServiceCard
           title="Industrial Security"
           desc="Tailored security for factories, warehouses, and production facilities."
+          tabIndex={0}
         />
         <ServiceCard
           title="Transport Security"
           desc="Protect high-value cargo from departure to destination."
+          tabIndex={0}
         />
       </div>
       <style>{`

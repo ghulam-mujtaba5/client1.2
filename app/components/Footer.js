@@ -14,8 +14,8 @@ export default function Footer() {
           <span>Address: 128, City Road, London, EC1V 2NX, UNITED KINGDOM</span>
         </div>
         <nav aria-label="Legal links" style={{marginBottom: 8}}>
-          <a href="/privacy-policy" style={{color: 'var(--white)', margin: '0 1rem', textDecoration: 'underline'}} rel="noopener">Privacy Policy</a>
-          <a href="/terms" style={{color: 'var(--white)', margin: '0 1rem', textDecoration: 'underline'}} rel="noopener">Terms &amp; Conditions</a>
+          <a href="/privacy-policy" style={{color: 'var(--white)', margin: '0 1rem', textDecoration: 'underline'}} rel="noopener noreferrer">Privacy Policy</a>
+          <a href="/terms" style={{color: 'var(--white)', margin: '0 1rem', textDecoration: 'underline'}} rel="noopener noreferrer">Terms &amp; Conditions</a>
         </nav>
         <div style={{fontSize: '0.95rem', opacity: 0.8}}>
           Website by Aim Secure Group. All trademarks and logos are property of their respective owners.

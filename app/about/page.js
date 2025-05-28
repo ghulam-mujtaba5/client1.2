@@ -8,6 +8,7 @@ import containerStyles from '../container.module.css';
 export default function AboutPage() {
   return (
     <main className={containerStyles.pageBg}>
+      <Navbar />
       <section style={{
         width: '100%',
         minHeight: '220px',

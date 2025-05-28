@@ -1,1 +1,21 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="22" fill="#2196F3" stroke="#1A237E" stroke-width="2.5"/><path d="M16 24L22 30L32 18" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="24" r="18" fill="#fff" opacity=".08"/></svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="checkCircle" x1="2" y1="2" x2="46" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2196F3"/>
+      <stop offset="1" stop-color="#1A237E"/>
+    </linearGradient>
+    <radialGradient id="checkHighlight" cx="60%" cy="30%" r="60%" fx="60%" fy="30%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="checkShadow" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1A237E" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <g filter="url(#checkShadow)">
+    <circle cx="24" cy="24" r="22" fill="url(#checkCircle)" stroke="#1A237E" stroke-width="2.5"/>
+    <circle cx="24" cy="24" r="22" fill="url(#checkHighlight)"/>
+    <path d="M16 24L22 30L32 18" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="24" cy="24" r="18" fill="#fff" opacity=".08"/>
+  </g>
+</svg>

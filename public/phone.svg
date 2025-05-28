@@ -1,1 +1,22 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect x="12" y="4" width="24" height="40" rx="6" fill="#2196F3" stroke="#1A237E" stroke-width="2.5"/><rect x="18" y="10" width="12" height="24" rx="2" fill="#fff"/><circle cx="24" cy="38" r="2" fill="#1A237E"/><rect x="20" y="36" width="8" height="2" rx="1" fill="#2196F3"/></svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="phoneBody" x1="12" y1="4" x2="36" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2196F3"/>
+      <stop offset="1" stop-color="#1A237E"/>
+    </linearGradient>
+    <radialGradient id="phoneHighlight" cx="60%" cy="30%" r="60%" fx="60%" fy="30%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="phoneShadow" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1A237E" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <g filter="url(#phoneShadow)">
+    <rect x="12" y="4" width="24" height="40" rx="6" fill="url(#phoneBody)" stroke="#1A237E" stroke-width="2.5"/>
+    <rect x="12" y="4" width="24" height="40" rx="6" fill="url(#phoneHighlight)"/>
+    <rect x="18" y="10" width="12" height="24" rx="2" fill="#fff"/>
+    <circle cx="24" cy="38" r="2" fill="#1A237E"/>
+    <rect x="20" y="36" width="8" height="2" rx="1" fill="#2196F3"/>
+  </g>
+</svg>

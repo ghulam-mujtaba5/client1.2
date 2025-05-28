@@ -1,1 +1,22 @@
-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="windowBody" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2196F3"/>
+      <stop offset="1" stop-color="#1A237E"/>
+    </linearGradient>
+    <radialGradient id="windowHighlight" cx="60%" cy="30%" r="60%" fx="60%" fy="30%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="windowShadow" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1A237E" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <g filter="url(#windowShadow)">
+    <rect x="8" y="8" width="32" height="32" rx="6" fill="url(#windowBody)" stroke="#1A237E" stroke-width="2.5"/>
+    <rect x="8" y="8" width="32" height="32" rx="6" fill="url(#windowHighlight)"/>
+    <rect x="14" y="14" width="8" height="20" rx="2" fill="#fff"/>
+    <rect x="26" y="14" width="8" height="20" rx="2" fill="#fff"/>
+    <rect x="14" y="22" width="20" height="4" rx="2" fill="#1A237E" opacity=".18"/>
+  </g>
+</svg>

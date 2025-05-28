@@ -59,8 +59,8 @@ export default function Navbar() {
         <li><a href="/sectors" style={navLinkStyle}>Sectors</a></li>
         <li><a href="/case-studies" style={navLinkStyle}>Case Studies</a></li>
         <li><a href="/careers" style={navLinkStyle}>Careers</a></li>
-        <li><a href="#about" style={navLinkStyle}>About</a></li>
-        <li><a href="#contact" style={navLinkStyle}>Contact</a></li>
+        <li><a href="/about" style={navLinkStyle}>About</a></li>
+        <li><a href="/contact" style={navLinkStyle}>Contact</a></li>
       </ul>
       <button
         aria-label="Open navigation menu"

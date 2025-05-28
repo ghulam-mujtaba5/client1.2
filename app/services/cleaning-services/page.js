@@ -119,8 +119,16 @@ export default function CleaningServicesPage() {
             <span style={{fontWeight: 700}}>Email:</span> <a href="mailto:info@aimsecuregroup.uk" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}>info@aimsecuregroup.uk</a>
           </span>
         </address>
-        <div style={{width: '100%', maxWidth: 500, height: 260, borderRadius: 14, overflow: 'hidden', boxShadow: '0 2px 16px #1a237e11', background: 'linear-gradient(135deg, #e3f2fd 60%, #bbdefb 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8}}>
-          <span style={{color: '#1976d2', fontWeight: 700, fontSize: '1.1rem', opacity: 0.7}}>Map Placeholder</span>
+        <div style={{width: '100%', maxWidth: 500, height: 260, borderRadius: 14, overflow: 'hidden', boxShadow: '0 2px 16px #1a237e11', background: 'linear-gradient(135deg, #e3f2fd 60%, #bbdefb 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8, position: 'relative'}}>
+          <iframe
+            title="Company Location Map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.0945%2C51.5285%2C-0.0885%2C51.5315&amp;layer=mapnik&amp;marker=51.5300%2C-0.0915"
+            style={{border: 0, width: '100%', height: '100%', filter: 'contrast(1.1) brightness(1.05)', borderRadius: 14, transition: 'box-shadow 0.3s'}}
+            allowFullScreen
+            loading="lazy"
+            tabIndex={0}
+            aria-label="Map showing company location"
+          ></iframe>
         </div>
       </section>
       <style>{`

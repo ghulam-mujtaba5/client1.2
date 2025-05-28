@@ -77,9 +77,9 @@ function ServiceCard({ title, desc }) {
   return (
     <div
       style={{
-        background: "#fff",
+        background: "var(--white)",
         borderRadius: 16,
-        boxShadow: "0 4px 24px rgba(0,0,0,0.10)",
+        boxShadow: "0 4px 24px rgba(26,35,126,0.10)",
         padding: "2.5rem 1.5rem",
         textAlign: "center",
         minHeight: 210,
@@ -88,16 +88,16 @@ function ServiceCard({ title, desc }) {
         cursor: "pointer",
         position: "relative",
         overflow: "hidden",
-        border: "1.5px solid #f2f2f2",
+        border: "1.5px solid var(--accent-blue-light)",
         marginBottom: 8,
       }}
       onMouseOver={(e) => {
         e.currentTarget.style.transform = "translateY(-8px) scale(1.03)";
-        e.currentTarget.style.boxShadow = "0 8px 32px rgba(230,57,70,0.13)";
+        e.currentTarget.style.boxShadow = "0 8px 32px rgba(26,35,126,0.13)";
       }}
       onMouseOut={(e) => {
         e.currentTarget.style.transform = "none";
-        e.currentTarget.style.boxShadow = "0 4px 24px rgba(0,0,0,0.10)";
+        e.currentTarget.style.boxShadow = "0 4px 24px rgba(26,35,126,0.10)";
       }}
     >
       <div style={{ marginBottom: 18, transition: "transform 0.3s" }}>
@@ -107,7 +107,7 @@ function ServiceCard({ title, desc }) {
           width={48}
           height={48}
           style={{
-            filter: "drop-shadow(0 2px 8px #e6394622)",
+            filter: "drop-shadow(0 2px 8px #2196f322)",
           }}
         />
       </div>
@@ -116,7 +116,7 @@ function ServiceCard({ title, desc }) {
           fontSize: "1.25rem",
           fontWeight: 700,
           marginBottom: 10,
-          color: "#e63946",
+          color: "var(--primary-blue)",
         }}
       >
         {title}
@@ -138,7 +138,7 @@ function ServiceCard({ title, desc }) {
           width: "100%",
           height: 4,
           background:
-            "linear-gradient(90deg, #e63946 60%, #ffb703 100%)",
+            "linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%)",
           opacity: 0.12,
         }}
       />

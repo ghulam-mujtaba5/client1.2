@@ -3,8 +3,8 @@ export default function Navbar() {
   return (
     <nav style={{
       width: '100%',
-      background: 'rgba(17,17,17,0.98)',
-      color: '#fff',
+      background: 'rgba(17,23,46,0.98)', // deep blue-black
+      color: 'var(--white)',
       padding: '1.2rem 3vw',
       display: 'flex',
       justifyContent: 'space-between',
@@ -13,14 +13,14 @@ export default function Navbar() {
       position: 'sticky',
       top: 0,
       zIndex: 100,
-      boxShadow: '0 2px 16px rgba(0,0,0,0.08)',
+      boxShadow: '0 2px 16px rgba(26,35,126,0.08)',
       borderBottomLeftRadius: 12,
       borderBottomRightRadius: 12,
       transition: 'background 0.3s'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <img src="/file.svg" alt="Aim Secure Group Logo" style={{ width: 38, height: 38, marginRight: 10, filter: 'drop-shadow(0 2px 8px #e6394622)' }} />
-        <span style={{ fontWeight: 900, fontSize: '1.7rem', letterSpacing: '-1px', color: '#e63946' }}>Aim Secure Group</span>
+        <img src="/file.svg" alt="Aim Secure Group Logo" style={{ width: 38, height: 38, marginRight: 10, filter: 'drop-shadow(0 2px 8px #2196f322)' }} />
+        <span style={{ fontWeight: 900, fontSize: '1.7rem', letterSpacing: '-1px', color: 'var(--primary-blue)' }}>Aim Secure Group</span>
       </div>
       <ul style={{
         display: 'flex',
@@ -35,15 +35,15 @@ export default function Navbar() {
         <li><a href="#contact" style={navLinkStyle}>Contact</a></li>
       </ul>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginLeft: '2rem', gap: 2 }}>
-        <a href="tel:+447448023005" style={{ color: '#e63946', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.08rem', letterSpacing: '0.5px', transition: 'color 0.2s' }}>+44 7448 023005</a>
-        <a href="mailto:info@aimsecuregroup.uk" style={{ color: '#e63946', textDecoration: 'none', fontSize: '0.98rem', transition: 'color 0.2s' }}>info@aimsecuregroup.uk</a>
+        <a href="tel:+447448023005" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.08rem', letterSpacing: '0.5px', transition: 'color 0.2s' }}>+44 7448 023005</a>
+        <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontSize: '0.98rem', transition: 'color 0.2s' }}>info@aimsecuregroup.uk</a>
       </div>
     </nav>
   );
 }
 
 const navLinkStyle = {
-  color: '#fff',
+  color: 'var(--white)',
   textDecoration: 'none',
   fontWeight: 600,
   fontSize: '1.08rem',
@@ -53,4 +53,5 @@ const navLinkStyle = {
   transition: 'background 0.2s, color 0.2s',
   position: 'relative',
   cursor: 'pointer',
+  background: 'none',
 };

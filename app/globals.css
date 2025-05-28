@@ -1,6 +1,13 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-blue: #1a237e;
+  --primary-blue-light: #3949ab;
+  --primary-blue-dark: #0d1333;
+  --accent-blue: #2196f3;
+  --accent-blue-light: #e3f2fd;
+  --black: #111;
+  --white: #fff;
+  --gray: #f4f4f4;
+  --gray-dark: #222;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,8 +25,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  background: #f4f4f4;
-  color: #222;
+  background: var(--gray);
+  color: var(--gray-dark);
   scroll-behavior: smooth;
 }
 
@@ -75,17 +82,17 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border: 1.5px solid #e63946;
+  border: 1.5px solid var(--primary-blue);
   outline: none;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  background: #eee;
+  background: var(--accent-blue-light);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e63946;
+  background: var(--primary-blue);
   border-radius: 4px;
 }
 

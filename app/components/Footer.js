@@ -55,10 +55,10 @@ export default function Footer() {
         <div style={{ minWidth: 220 }}>
           <div style={{ fontWeight: 700, marginBottom: 8 }}>Accreditations</div>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            <span style={badgeStyle}>SIA Approved</span>
-            <span style={badgeStyle}>ISO 9001</span>
-            <span style={badgeStyle}>SafeContractor</span>
-            <span style={badgeStyle}>ICO Registered</span>
+            <span style={badgeStyle}><img src="/shield.svg" alt="SIA" style={{height:18,verticalAlign:'middle',marginRight:4}} />SIA Approved</span>
+            <span style={badgeStyle}><img src="/check.svg" alt="ISO" style={{height:18,verticalAlign:'middle',marginRight:4}} />ISO 9001</span>
+            <span style={badgeStyle}><img src="/star.svg" alt="SafeContractor" style={{height:18,verticalAlign:'middle',marginRight:4}} />SafeContractor</span>
+            <span style={badgeStyle}><img src="/building.svg" alt="ICO" style={{height:18,verticalAlign:'middle',marginRight:4}} />ICO Registered</span>
           </div>
         </div>
       </div>

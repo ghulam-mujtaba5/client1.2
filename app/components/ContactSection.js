@@ -55,9 +55,9 @@ export default function ContactSection() {
           }} aria-label="Send message">Send</button>
         </form>
         <div style={{ marginTop: '2rem', color: 'var(--gray-dark)', textAlign: 'left', fontSize: '1.08rem' }}>
-          <div style={{ marginBottom: 6 }}>Call us: <a href="tel:+447448023005" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 600 }}>+44 7448 023005</a></div>
-          <div style={{ marginBottom: 6 }}>Email: <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 600 }}>info@aimsecuregroup.uk</a></div>
-          <div style={{ marginTop: 8 }}>123 Main Street, London, UK</div>
+          <div style={{ marginBottom: 6 }}><img src="/phone.svg" alt="Phone" style={{height:20,verticalAlign:'middle',marginRight:6}} />Call us: <a href="tel:+447448023005" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 600 }}>+44 7448 023005</a></div>
+          <div style={{ marginBottom: 6 }}><img src="/mail.svg" alt="Email" style={{height:20,verticalAlign:'middle',marginRight:6}} />Email: <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 600 }}>info@aimsecuregroup.uk</a></div>
+          <div style={{ marginTop: 8 }}><img src="/building.svg" alt="Address" style={{height:20,verticalAlign:'middle',marginRight:6}} />123 Main Street, London, UK</div>
         </div>
       </div>
       <div style={{ flex: 1, minWidth: 320, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>

@@ -5,37 +5,37 @@ import ServiceCard from '../../components/ServiceCard';
 const services = [
   {
     title: 'Security Guards',
-    icon: '/file.svg',
+    icon: '/shield.svg',
     link: '/services/security-guards',
     desc: 'Professional, SIA-licensed guards for all sectors and occasions.'
   },
   {
     title: 'Corporate Security',
-    icon: '/globe.svg',
+    icon: '/building.svg',
     link: '/services/corporate-security',
     desc: 'Concierge, static, and mobile security for your business premises.'
   },
   {
     title: 'Event Security',
-    icon: '/window.svg',
+    icon: '/event.svg',
     link: '/services/event-security',
     desc: 'Planning, crowd management, and on-site protection for safe events.'
   },
   {
     title: 'Retail Security',
-    icon: '/vercel.svg',
+    icon: '/shop.svg',
     link: '/services/retail-security',
     desc: 'Reduce losses and protect assets with expert retail security solutions.'
   },
   {
     title: 'Industrial Security',
-    icon: '/file.svg',
+    icon: '/factory.svg',
     link: '/services/industrial-security',
     desc: 'Tailored security for factories, warehouses, and production facilities.'
   },
   {
     title: 'Transport Security',
-    icon: '/globe.svg',
+    icon: '/truck.svg',
     link: '/services/transport-security',
     desc: 'Protect high-value cargo from departure to destination.'
   }

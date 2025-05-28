@@ -35,24 +35,54 @@ export default function Navbar() {
           background: 'none',
           border: 'none',
           color: 'var(--white)',
-          fontSize: 28,
+          fontSize: 32,
           marginLeft: 16,
           cursor: 'pointer',
+          zIndex: 120,
         }}
         className="nav-mobile-btn"
       >
-        &#9776;
+        {open ? <>&#10005;</> : <>&#9776;</>}
       </button>
+      {/* Overlay for mobile menu */}
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100vh',
+            background: 'rgba(0,0,0,0.3)',
+            zIndex: 110,
+            display: 'block',
+          }}
+        />
+      )}
       <ul
         style={{
-          display: 'flex',
-          gap: '2.2rem',
+          display: open ? 'flex' : 'flex',
+          gap: open ? '1.5rem' : '2.2rem',
           listStyle: 'none',
           margin: 0,
           padding: 0,
-          flexDirection: 'row',
+          flexDirection: open ? 'column' : 'row',
+          position: open ? 'fixed' : 'static',
+          top: open ? 0 : undefined,
+          right: open ? 0 : undefined,
+          width: open ? '80vw' : undefined,
+          height: open ? '100vh' : undefined,
+          background: open ? 'rgba(17,23,46,0.98)' : undefined,
+          zIndex: open ? 120 : undefined,
+          alignItems: open ? 'flex-start' : 'center',
+          justifyContent: open ? 'flex-start' : 'center',
+          paddingTop: open ? '5rem' : 0,
+          transition: 'all 0.3s',
+          boxShadow: open ? '0 0 32px rgba(0,0,0,0.18)' : undefined,
         }}
         className={open ? 'nav-open' : ''}
+        onClick={() => open && setOpen(false)}
       >
         <li><a href="/" style={navLinkStyle}>Home</a></li>
         <li><a href="/services" style={navLinkStyle}>Services</a></li>
@@ -63,9 +93,9 @@ export default function Navbar() {
         <li><a href="#about" style={navLinkStyle}>About</a></li>
         <li><a href="#contact" style={navLinkStyle}>Contact</a></li>
       </ul>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginLeft: '2rem', gap: 2, fontSize: '1rem' }}>
-        <a href="tel:+447448023005" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.08rem', letterSpacing: '0.5px', transition: 'color 0.2s' }}>+44 7448 023005</a>
-        <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontSize: '0.98rem', transition: 'color 0.2s' }}>info@aimsecuregroup.uk</a>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: open ? 'flex-start' : 'flex-end', marginLeft: open ? 0 : '2rem', gap: 2, fontSize: '1rem', paddingTop: open ? 16 : 0 }}>
+        <a href="tel:+447448023005" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.08rem', letterSpacing: '0.5px', transition: 'color 0.2s', padding: open ? '0.5rem 0' : 0 }}>+44 7448 023005</a>
+        <a href="mailto:info@aimsecuregroup.uk" style={{ color: 'var(--primary-blue)', textDecoration: 'none', fontSize: '0.98rem', transition: 'color 0.2s', padding: open ? '0.5rem 0' : 0 }}>info@aimsecuregroup.uk</a>
       </div>
       <style>{`
         @media (max-width: 900px) {
@@ -79,13 +109,6 @@ export default function Navbar() {
           }
           ul {
             display: none !important;
-            flex-direction: column !important;
-            width: 100%;
-            gap: 1.2rem !important;
-            margin-top: 1rem !important;
-            background: rgba(17,23,46,0.98);
-            border-radius: 8px;
-            padding: 1rem 0.5rem !important;
           }
           .nav-open {
             display: flex !important;
@@ -118,10 +141,12 @@ const navLinkStyle = {
   fontWeight: 600,
   fontSize: '1.08rem',
   letterSpacing: '0.5px',
-  padding: '0.2rem 0.5rem',
+  padding: '0.7rem 0.5rem',
   borderRadius: 4,
   transition: 'background 0.2s, color 0.2s',
   position: 'relative',
   cursor: 'pointer',
   background: 'none',
+  display: 'block',
+  minWidth: 80,
 };

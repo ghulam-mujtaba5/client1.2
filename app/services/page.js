@@ -46,7 +46,7 @@ const services = [
 
 export default function ServicesPage() {
 	return (
-		<main className={styles.container}>
+		<main className={styles.container} aria-label="Services main content">
 			<HeroSection />
 			<section
 				style={{
@@ -55,8 +55,11 @@ export default function ServicesPage() {
 					padding: '2.5rem 0 1.5rem 0',
 					textAlign: 'center',
 				}}
+				aria-labelledby="services-main-heading"
 			>
-				<h1 className={styles.heading}>Our Security Services</h1>
+				<h1 id="services-main-heading" className={styles.heading} tabIndex={-1}>
+					Our Security Services
+				</h1>
 				<p
 					style={{
 						fontSize: '1.2rem',
@@ -65,15 +68,16 @@ export default function ServicesPage() {
 						maxWidth: 700,
 					}}
 				>
-					Accredited, professional, and responsive security solutions for every
-					sector. Our SIA-licensed team delivers peace of mind for businesses,
-					events, and individuals across the UK and Europe. Explore our full range
-					of services below.
+					Accredited, professional, and responsive security solutions for every sector. Our SIA-licensed team delivers peace of mind for businesses, events, and individuals across the UK and Europe. Explore our full range of services below.
 				</p>
+				<span className="visually-hidden" id="services-list-desc">
+					List of all security services provided by Aim Secure Group, each with a description and link to more details.
+				</span>
 			</section>
-			<div className={styles.servicesList}>
+			<h2 className="visually-hidden">All Security Services</h2>
+			<div className={styles.servicesList} aria-describedby="services-list-desc">
 				{services.map(service => (
-					<ServiceCard key={service.link} {...service} />
+					<ServiceCard key={service.link} {...service} aria-label={`Learn more about ${service.title} - ${service.desc}`} />
 				))}
 			</div>
 			<WhyChooseUs />

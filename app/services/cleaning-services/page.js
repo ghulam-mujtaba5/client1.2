@@ -94,7 +94,7 @@ export default function CleaningServicesPage() {
           <li tabIndex={0} style={{transition: 'color 0.2s'}} onMouseOver={e => e.currentTarget.style.color = '#1976d2'} onMouseOut={e => e.currentTarget.style.color = '#222'} onFocus={e => e.currentTarget.style.color = '#1976d2'} onBlur={e => e.currentTarget.style.color = '#222'}>Fully vetted, professional staff</li>
         </ul>
       </section>
-      <div style={{display: 'flex', justifyContent: 'center'}}>
+      <div style={{display: 'flex', justifyContent: 'center', marginBottom: 32}}>
         <a ref={ctaRef} className="scale-in interactive-cta" href="/contact" style={{position: 'relative', overflow: 'hidden', background: 'linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%)', color: 'var(--white)', padding: '1rem 2.5rem', borderRadius: 8, fontWeight: 800, textDecoration: 'none', fontSize: '1.18rem', boxShadow: '0 2px 12px #2196f322', letterSpacing: '0.5px', transition: 'background 0.2s, box-shadow 0.2s'}}
           aria-label="Request a cleaning services quote"
           tabIndex={0}
@@ -104,6 +104,25 @@ export default function CleaningServicesPage() {
           onBlur={e => {e.currentTarget.style.background = 'linear-gradient(90deg, var(--primary-blue) 60%, var(--accent-blue) 100%)'; e.currentTarget.style.boxShadow = '0 2px 12px #2196f322';}}
         >Request a Quote</a>
       </div>
+      {/* Contact & Map Section */}
+      <section className="fade-in animate-on-scroll" aria-label="Our Address and Map" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 32}}>
+        <h3 className="slide-up animate-on-scroll" style={{fontSize: '1.15rem', color: 'var(--primary-blue)', fontWeight: 700, marginBottom: 10, textAlign: 'center', letterSpacing: '-0.5px'}}>Our Address & Contact</h3>
+        <address style={{fontStyle: 'normal', color: '#333', fontSize: '1.08rem', marginBottom: 16, textAlign: 'center', lineHeight: 1.7}}>
+          <div style={{fontWeight: 700, color: '#1976d2', fontSize: '1.12rem'}}>AIM SECURE GROUP.UK LTD</div>
+          128, City Road,<br />
+          London, EC1V 2NX, UNITED KINGDOM<br />
+          <span style={{fontWeight: 500, color: '#1976d2'}}>Registered in UNITED KINGDOM, Number 16083036</span><br />
+          <span style={{display: 'block', marginTop: 10}}>
+            <span style={{fontWeight: 700}}>Phone:</span> <a href="tel:+447448023005" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}>+44 7448 023005</a>
+          </span>
+          <span>
+            <span style={{fontWeight: 700}}>Email:</span> <a href="mailto:info@aimsecuregroup.uk" style={{color: '#1976d2', textDecoration: 'underline', transition: 'color 0.2s'}} tabIndex={0} onMouseOver={e => e.currentTarget.style.color = '#0d47a1'} onMouseOut={e => e.currentTarget.style.color = '#1976d2'} onFocus={e => e.currentTarget.style.color = '#0d47a1'} onBlur={e => e.currentTarget.style.color = '#1976d2'}>info@aimsecuregroup.uk</a>
+          </span>
+        </address>
+        <div style={{width: '100%', maxWidth: 500, height: 260, borderRadius: 14, overflow: 'hidden', boxShadow: '0 2px 16px #1a237e11', background: 'linear-gradient(135deg, #e3f2fd 60%, #bbdefb 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8}}>
+          <span style={{color: '#1976d2', fontWeight: 700, fontSize: '1.1rem', opacity: 0.7}}>Map Placeholder</span>
+        </div>
+      </section>
       <style>{`
         .ripple {
           position: absolute;

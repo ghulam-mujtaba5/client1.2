@@ -50,7 +50,7 @@ export default function Footer() {
           <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
           <div style={{ color: 'var(--white)', fontWeight: 600 }}>+44 7448 023005</div>
           <div style={{ color: 'var(--white)', fontWeight: 600 }}>info@aimsecuregroup.uk</div>
-          <div style={{ color: '#bbb', fontSize: '0.98rem', marginTop: 6 }}>123 Main Street, London, UK</div>
+          <div style={{ color: '#bbb', fontSize: '0.98rem', marginTop: 6 }}>AIM SECURE GROUP.UK LTD<br />128, City Road, London, EC1V 2NX, UNITED KINGDOM<br />Registered in UNITED KINGDOM, Number 16083036</div>
         </div>
         <div style={{ minWidth: 220 }}>
           <div style={{ fontWeight: 700, marginBottom: 8 }}>Accreditations</div>

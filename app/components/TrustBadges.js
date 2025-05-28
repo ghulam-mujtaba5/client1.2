@@ -8,7 +8,6 @@ export default function TrustBadges() {
         <img src="/check.svg" alt="ISO 9001" style={{height: 40, opacity: 0.7}} />
         <img src="/star.svg" alt="SafeContractor" style={{height: 40, opacity: 0.7}} />
         <img src="/building.svg" alt="ICO Registered" style={{height: 40, opacity: 0.7}} />
-        <img src="/next.svg" alt="Client Logo" style={{height: 40, opacity: 0.7}} />
       </div>
     </section>
   );

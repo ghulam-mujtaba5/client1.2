@@ -17,13 +17,13 @@ const services = [
   },
   {
     title: 'Event Security',
-    icon: '/event.svg',
+    icon: '/crowd.svg',
     link: '/services/event-security',
     desc: 'Planning, crowd management, and on-site protection for safe events.'
   },
   {
     title: 'Retail Security',
-    icon: '/shop.svg',
+    icon: '/bag.svg',
     link: '/services/retail-security',
     desc: 'Reduce losses and protect assets with expert retail security solutions.'
   },
@@ -35,7 +35,7 @@ const services = [
   },
   {
     title: 'Transport Security',
-    icon: '/truck.svg',
+    icon: '/patrol.svg',
     link: '/services/transport-security',
     desc: 'Protect high-value cargo from departure to destination.'
   }

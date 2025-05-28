@@ -16,8 +16,9 @@ export default function HeroSection() {
       padding: '6rem 2rem 4rem 2rem',
       position: 'relative',
       overflow: 'hidden',
-      boxShadow: '0 8px 32px rgba(26,35,126,0.18)'
-    }}>
+      boxShadow: '0 8px 32px rgba(26,35,126,0.18)',
+      maxWidth: '100vw',
+    }} aria-label="Hero section">
       <div style={{
         position: 'absolute',
         top: 0,
@@ -28,7 +29,7 @@ export default function HeroSection() {
         pointerEvents: 'none',
         background: 'radial-gradient(circle at 60% 40%, var(--accent-blue) 0%, transparent 70%)'
       }} />
-      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" style={{ position: 'absolute', right: 40, top: 40, opacity: 0.12, zIndex: 2, maxWidth: '20vw', minWidth: 60 }}><circle cx="60" cy="60" r="58" stroke="var(--white)" strokeWidth="4" /><rect x="35" y="35" width="50" height="50" rx="12" fill="var(--primary-blue)" opacity="0.2" /></svg>
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" style={{ position: 'absolute', right: 40, top: 40, opacity: 0.12, zIndex: 2, maxWidth: '20vw', minWidth: 60 }} aria-hidden="true"><circle cx="60" cy="60" r="58" stroke="var(--white)" strokeWidth="4" /><rect x="35" y="35" width="50" height="50" rx="12" fill="var(--primary-blue)" opacity="0.2" /></svg>
       <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.2rem', letterSpacing: '-1px', zIndex: 3, animation: 'fadeInUp 1.2s', maxWidth: 600 }}>
         Security & Protection You Can Trust
       </h1>
@@ -47,24 +48,27 @@ export default function HeroSection() {
         zIndex: 3,
         animation: 'fadeInUp 1.8s',
         width: 'fit-content',
-        margin: '0 auto'
+        margin: '0 auto',
+        minWidth: 160,
+        display: 'inline-block',
       }}>
         Get a Free Quote
       </a>
       <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', zIndex: 2 }}>
-        <Image src="/vercel.svg" alt="Security graphic" width={120} height={40} style={{ opacity: 0.18, margin: '0 auto', maxWidth: '30vw', minWidth: 40 }} />
+        {/* Decorative image, aria-hidden for accessibility */}
+        <Image src="/vercel.svg" alt="" width={120} height={40} style={{ opacity: 0.18, margin: '0 auto', maxWidth: '30vw', minWidth: 40 }} aria-hidden="true" />
       </div>
       <style>{`
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
           section {
-            padding: 2.5rem 0.5rem 2rem 0.5rem !important;
+            padding: 3rem 0.7rem 2rem 0.7rem !important;
           }
           h1 {
-            font-size: 1.5rem !important;
+            font-size: 2rem !important;
             max-width: 95vw !important;
           }
           p {
-            font-size: 1rem !important;
+            font-size: 1.05rem !important;
             max-width: 95vw !important;
           }
           svg {
@@ -72,6 +76,29 @@ export default function HeroSection() {
             height: 60px !important;
             right: 10px !important;
             top: 10px !important;
+          }
+          a {
+            font-size: 1.05rem !important;
+            min-width: 120px !important;
+            padding: 0.7rem 1.2rem !important;
+          }
+        }
+        @media (max-width: 480px) {
+          section {
+            padding: 1.2rem 0.2rem 1.2rem 0.2rem !important;
+          }
+          h1 {
+            font-size: 1.15rem !important;
+            max-width: 99vw !important;
+          }
+          p {
+            font-size: 0.92rem !important;
+            max-width: 99vw !important;
+          }
+          a {
+            font-size: 0.92rem !important;
+            min-width: 90px !important;
+            padding: 0.5rem 0.7rem !important;
           }
         }
       `}</style>

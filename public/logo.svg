@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="logoShieldGradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2196F3"/>
+      <stop offset="1" stop-color="#1A237E"/>
+    </linearGradient>
+    <radialGradient id="logoHighlight" cx="50%" cy="30%" r="60%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="logoShadow" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1A237E" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#logoShadow)">
+    <path d="M24 4L8 10V20C8 32 24 44 24 44C24 44 40 32 40 20V10L24 4Z" fill="url(#logoShieldGradient)" stroke="#1A237E" stroke-width="2.5"/>
+    <path d="M24 4L8 10V20C8 32 24 44 24 44C24 44 40 32 40 20V10L24 4Z" fill="url(#logoHighlight)"/>
+    <path d="M24 24V14" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="24" cy="28" r="2.5" fill="#fff" stroke="#1A237E" stroke-width="1"/>
+    <rect x="18" y="18" width="12" height="6" rx="2" fill="#fff" opacity="0.18"/>
+    <rect x="21" y="10" width="6" height="4" rx="1.5" fill="#2196F3" opacity="0.7"/>
+  </g>
+</svg>

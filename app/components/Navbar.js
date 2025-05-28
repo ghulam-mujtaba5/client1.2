@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 // Simple navigation bar for the security website
 export default function Navbar() {
@@ -24,8 +25,10 @@ export default function Navbar() {
       flexWrap: 'wrap',
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <img src="/file.svg" alt="Aim Secure Group Logo" style={{ width: 38, height: 38, marginRight: 10, filter: 'drop-shadow(0 2px 8px #2196f322)' }} />
-        <span style={{ fontWeight: 900, fontSize: '1.7rem', letterSpacing: '-1px', color: 'var(--primary-blue)' }}>Aim Secure Group</span>
+        <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', gap: 10 }} aria-label="Aim Secure Group Home">
+          <Image src="/logo.svg" alt="Aim Secure Group Logo" width={38} height={38} style={{ filter: 'drop-shadow(0 2px 8px #2196f322)' }} />
+          <span style={{ fontWeight: 900, fontSize: '1.7rem', letterSpacing: '-1px', color: 'var(--primary-blue)', fontFamily: 'var(--font-geist-sans)' }}>Aim Secure Group</span>
+        </a>
       </div>
       <ul
         style={{

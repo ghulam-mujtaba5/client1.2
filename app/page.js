@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
+    <main style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
       <Navbar />
       <HeroSection />
       <TrustBadges />
@@ -24,6 +24,6 @@ export default function Home() {
       <CallToActionBanner />
       <ContactSection />
       <Footer />
-    </div>
+    </main>
   );
 }

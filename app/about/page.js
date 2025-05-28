@@ -1,13 +1,13 @@
 import Navbar from '../components/Navbar';
 import AboutSection from '../components/AboutSection';
-import Footer from '../components/Footer';
 import TrustBadges from '../components/TrustBadges';
 import FeaturedClients from '../components/FeaturedClients';
 import Testimonials from '../components/Testimonials';
+import containerStyles from '../container.module.css';
 
 export default function AboutPage() {
   return (
-    <main style={{ width: '100%', minHeight: '100vh', background: '#f4f4f4' }}>
+    <main className={containerStyles.pageBg}>
       <section style={{
         width: '100%',
         minHeight: '220px',
@@ -29,7 +29,7 @@ export default function AboutPage() {
           Trusted security partner for leading brands, events, and organisations across the UK and Europe. Accredited, experienced, and dedicated to your safety.
         </p>
       </section>
-      <section style={{ padding: '2.5rem 1rem 1.5rem 1rem', background: 'var(--white)' }}>
+      <section className={containerStyles.container + ' ' + containerStyles.section}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-blue)', marginBottom: 18 }}>Our Story</h2>
         <p style={{ fontSize: '1.1rem', lineHeight: 1.7, marginBottom: 24 }}>
           Founded in 2005, Aim Secure Group has grown from a local security provider to a trusted partner for major brands, events, and organisations across the UK and Europe. Our reputation is built on reliability, professionalism, and a relentless focus on client satisfaction. We combine decades of experience with the latest technology and a highly trained team to deliver security solutions you can trust.
